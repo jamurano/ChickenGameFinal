@@ -1,4 +1,4 @@
-OSXStandalone
+WindowsStandalone
 88f67488a386da2e59d5442ba6dc3899 Assembly-CSharp.dll:.Main_Menu
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 970a95104359198fe1a98ef48655de8c UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -12,6 +12,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 af723155c251fcfa0e66530a75f3ea4c UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+aca66c24b3d96b316af4ae5bdd50c939 Assembly-CSharp.dll:.ScoreScreen
 43a6f05735cf6d5a961773717cc7a090 Assembly-CSharp.dll:.Shoot
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -145,4 +146,3 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 7228bbb7be60bc6106c554d2a3ef75dd Assembly-CSharp.dll:.WanderScript
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Win
-aca66c24b3d96b316af4ae5bdd50c939 Assembly-CSharp.dll:.ScoreScreen
