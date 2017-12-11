@@ -12,6 +12,7 @@ public class Main_Menu : MonoBehaviour {
 	}
 
 	public void LevelExit(){
+        Debug.Log("Exit");
 		Application.Quit();
 		
 	}

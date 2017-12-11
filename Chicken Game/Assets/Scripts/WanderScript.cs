@@ -11,13 +11,14 @@ public class WanderScript : MonoBehaviour
     private bool isRotatingLeft = false;
     private bool isRotatingRight = false;
     private bool isWalking = false;
+    private Coroutine wanderRoutine;
 
     public void Update()
     {
 
         if (isWandering == false)
         {
-            StartCoroutine(Wander());
+            wanderRoutine = StartCoroutine(Wander());
         }
         if (isRotatingRight == true)
         {
@@ -30,8 +31,22 @@ public class WanderScript : MonoBehaviour
         }
 
         if (isWalking == true)
-        {
+        {   
             transform.position += transform.forward * moveSpeed * Time.deltaTime;
+        }
+    }
+
+    private void OnEnable()
+    {
+        wanderRoutine = StartCoroutine(Wander());
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log(gameObject.name + " disabled");
+        if (wanderRoutine != null)
+        {
+            StopCoroutine(wanderRoutine);
         }
     }
 

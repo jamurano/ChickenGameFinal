@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelMaker : MonoBehaviour {
 
@@ -8,8 +9,9 @@ public class LevelMaker : MonoBehaviour {
     public int wolfAmount;
     public Rigidbody chicken;
     public Rigidbody wolf;
+    public Text chickenText;
 
-    private int chickensLeft = 0;
+    public static int chickensLeft = 0;
 
     public void Start()
     {
@@ -27,7 +29,7 @@ public class LevelMaker : MonoBehaviour {
 
     public void ChickenRemoved() {
         chickensLeft -= 1;
-
+        chickenText.text = chickensLeft.ToString();
         Debug.Log(string.Format("Chickens left: {0}", chickensLeft));
 
         if(chickensLeft <= 0) {
@@ -49,6 +51,7 @@ public class LevelMaker : MonoBehaviour {
         }
 
         chickensLeft = chickenAmount;
+        chickenText.text = chickensLeft.ToString();
     }
 
     public Vector3 GetRandomChickenLocation() {

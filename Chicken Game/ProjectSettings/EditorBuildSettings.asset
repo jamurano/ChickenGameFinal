@@ -11,6 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Chicken Game 2.unity
     guid: 843148865b0164a5794d50898bef50f3
-  - enabled: 0
-    path: Assets/Levels/Test Level.unity
-    guid: ee4b2356dcf7d8446b36da8e38c6b222
+  - enabled: 1
+    path: Assets/Levels/Score Screen.unity
+    guid: e40d145d55dea42db864510f8d33eb26

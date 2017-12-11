@@ -31,11 +31,18 @@ public class WolfAI : MonoBehaviour {
 			//Debug.Log("Player or Chicken has entered wolfs trigger");
             transform.LookAt(other.transform);
 			transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);
-            WanderScript.enabled = true;
+            //WanderScript.enabled = true;
 		}
 	}
 
-	void OnCollisionEnter(Collision other)
+    private void OnTriggerExit(Collider other)
+    {
+        if (!WanderScript.enabled) {
+            WanderScript.enabled = true;
+        }
+    }
+
+    void OnCollisionEnter(Collision other)
 	{
         StartCoroutine(HandleHitRoutine(other)); 
 	}
@@ -63,6 +70,7 @@ public class WolfAI : MonoBehaviour {
             Object.Destroy(chicken);
             var levelMaker = FindObjectOfType<LevelMaker>();
             levelMaker.ChickenRemoved();
+            Debug.Log("Wolf is waiting");
             wolfWaitTime = 5f;
             doWait = true;
 
