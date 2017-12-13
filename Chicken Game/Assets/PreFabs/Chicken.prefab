@@ -155,4 +155,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 4
   rotSpeed: 100
-  canJump: 1

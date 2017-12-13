@@ -1,11 +1,14 @@
 fileFormatVersion: 2
 guid: 5cadc997f9e934e11969c11d4db5d6bd
-timeCreated: 1512336578
+timeCreated: 1512966209
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - chicken: {fileID: 54840522612259334, guid: 63125992650884544861dede314bce8a, type: 2}
+  - wolf: {instanceID: 0}
+  - chickenText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
