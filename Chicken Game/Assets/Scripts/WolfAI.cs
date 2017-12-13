@@ -7,7 +7,7 @@ public class WolfAI : MonoBehaviour {
 	public float moveSpeed;
 	public int damage;
 
-	public GameObject pcHealth;
+    public Transform spawn;
 
     private WanderScript _wanderScript;
     private WanderScript WanderScript {
@@ -20,8 +20,17 @@ public class WolfAI : MonoBehaviour {
     }
     private bool pauseTrigger = false;
 
-	// Use this for initialization
-	void OnTriggerStay(Collider other){
+    private void Update()
+    {
+        if (transform.position.y <= -1)
+        {
+            transform.position = spawn.position;
+            transform.rotation = spawn.rotation;
+        }
+    }
+
+    // Use this for initialization
+    void OnTriggerStay(Collider other){
 
         //Debug.Log(string.Format("Wolf trigger {0} - paused {1}", other.gameObject.name, pauseTrigger));
 
