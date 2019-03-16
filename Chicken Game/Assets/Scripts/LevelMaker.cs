@@ -34,6 +34,7 @@ public class LevelMaker : MonoBehaviour {
 
         if(chickensLeft <= 0) {
             chickenAmount *= 2;
+
             CreateLevel();
         }
     }
