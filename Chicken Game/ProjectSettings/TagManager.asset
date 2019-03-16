@@ -10,7 +10,6 @@ TagManager:
   - ChickenRespond
   - ChickenSpawn
   - playerScore
-  - wolf
   layers:
   - Default
   - TransparentFX

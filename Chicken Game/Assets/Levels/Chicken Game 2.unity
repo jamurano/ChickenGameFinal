@@ -251,10 +251,6 @@ Prefab:
       propertyPath: pcHealth
       value: 
       objectReference: {fileID: 1440342711}
-    - target: {fileID: 1608748998370470, guid: 2afbc19d6f2844d359f5671d43deb6ba, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2afbc19d6f2844d359f5671d43deb6ba, type: 2}
   m_IsPrefabParent: 0
@@ -1788,7 +1784,7 @@ GameObject:
   - component: {fileID: 988789621}
   m_Layer: 0
   m_Name: Wolf Spawn
-  m_TagString: wolf
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2556,7 +2552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   damage: 5
-  spawn: {fileID: 0}
+  pcHealth: {fileID: 1440342711}
 --- !u!54 &1821079935
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2888,4 +2884,3 @@ MonoBehaviour:
   chicken: {fileID: 54840522612259334, guid: 63125992650884544861dede314bce8a, type: 2}
   wolf: {fileID: 54565475985498856, guid: 2afbc19d6f2844d359f5671d43deb6ba, type: 2}
   chickenText: {fileID: 454080504}
-  wolfSpawn: {fileID: 988789621}
